@@ -1,0 +1,183 @@
+<DOCTYEP html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Ethio-TV & Radio</title>
+
+            <style>
+                .body{
+	                    margin: 0;
+	                    height: 100vh;
+	                    display: flex;
+	                    justify-content: center;
+	                    align-items: center;
+                    }
+                .container{
+	                    width: 90%;
+	                    display: grid;
+	                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	                    grid-gap: 2px;
+	                    grid-row-gap: 20px;
+	                    width: min(100% - 2rem);
+	                    margin-inline: auto;
+                    }
+                .button-group-1{
+	                    height: 200px;
+	                    position: relative;
+                    }
+                .btn3{
+                        display: inline-flex;
+                        height: 200px;
+                        width: 200px;
+                        padding: 0;
+                        background: #070c0b;
+                        border: none;
+                        outline: none;
+                        border-radius: 5px;
+                        overflow: hidden;
+                        cursor: pointer;
+                        margin: 0;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+            </style>
+
+        </head>
+        <body background="{{url_for('static', filename='bg.png')}}">
+            <center>
+                <h1>Welcome To Ethio-Tv & Radio</h1>
+                <h2>Please Select Radio From The List</h2>
+            </center>
+            <div class="container">
+                <div class="button-group-1">
+                    <a href="{{url_for('radio_251')}}">
+                    <img src = "{{url_for('static', filename='R_logo/251_logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('afro_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/afro-logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('ahadu_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/ahadu-logo.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('bisrat_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/bisrat-logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('ebc104_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/ebc-logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('ethiopikalink_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/ethiopikalink-logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('ebc97_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/ebc-97.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('mirt_internet_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/mirt-logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('rahel_zeno_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/rahel-logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('sheger_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/sheger-logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('fana_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/Fana_fm_logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('fana_national_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/Fana_national_logo.PNG')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('anchoyemusica')}}">
+                    <img src = "{{url_for('static', filename='R_logo/anchoyemusica.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('awash_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/awash-90.7.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('axumite_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/axumite-radio.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('endod_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/endod-radio.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('ethio_tech_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/ethio-tech.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('hatricksport_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/hatricksport-radio.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('hena_talk_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/hena-talk.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('hilawie_radio')}}">
+                    <img src = "{{url_for('static', filename='R_logo/hilawie.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('jano_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/jano-fm.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('jon_fm')}}">
+                    <img src = "{{url_for('static', filename='R_logo/Jon-FM-Ethiopia.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('voice_of_ethiopia')}}">
+                    <img src = "{{url_for('static', filename='R_logo/voice-of-ethiopia.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('yengat_wege')}}">
+                    <img src = "{{url_for('static', filename='R_logo/yengat-wege.png')}}" class="btn3">
+                    </a>
+                </div>
+                <div class="button-group-1">
+                    <a href="{{url_for('yonas_kassahun')}}">
+                    <img src = "{{url_for('static', filename='R_logo/Yonas-Kassahun.png')}}" class="btn3">
+                    </a>
+                </div>
+            </dev>
+        </body>
+        
+    </html>
